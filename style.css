@@ -1,7 +1,173 @@
+/*importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lustria&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Fonts to use below*/
+/*
+font-family: 'Arvo', serif;
+font-family: 'Baskervville', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Fraunces', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lustria', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Unna', serif;
+*/
+
+* { 
+    padding: 0%;
+    margin: 0%;
+}
 html { 
     background-color: hsl(30, 38%, 92%);
 }
 
+body { 
+    border: 5px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Editing the entire card*/
+
+.card { 
+    display: flex;
+    width: 42.4%;
+    height: 59.5%;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/*------------------Editing the content of the card starts here----------------------------*/
+
+/*----- Editing the image, and the container of the image*/
+
+.card__perfume--img { 
+    display: flex;
+    width: 110%;
+    height: 100%;
+}
+
+.card__img--perfume {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----- Editing the container of all the text, and text below*/
+
+
+.card__perfume--details { 
+    width: 95%;
+    padding: 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card__details--title { 
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%) ;
+    font-size: 12px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.card__details--name { 
+    
+    font-family: 'Fraunces', serif;  
+    padding-left: 12px; 
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 30px;
+
+}
+
+.card__details--info { 
+    
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%) ;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left:12px ;
+    line-height: 23px;
+    margin-bottom: 25px;
+    width: 90%;
+}
+
+.card__details--price { 
+    
+    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 29px;
+}
+
+.card__price--new { 
+    font-family: 'Fraunces', serif; 
+    color: hsl(158, 36%, 37%); 
+    font-size: 30px;
+}
+
+.card__price--old { 
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%) ;
+    font-weight: 500;
+}
+
+.card__cart--wrap { 
+    
+    display: flex;
+    justify-content: center;
+}
+
+.card__cart--btn { 
+    border: transparent;
+    border-radius:10px ;
+    width: 92%;
+    background-color: hsl(158, 36%, 37%);
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card__cart--text { 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card__cart--btn:hover { 
+    cursor: pointer; 
+    background-color:hsl(158, 35%, 21%) ;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
