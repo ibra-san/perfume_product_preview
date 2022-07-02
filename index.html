@@ -17,7 +17,10 @@
 
   <div class="card">
     <div class="card__perfume--img">
-      <img src="images/image-product-desktop.jpg" alt="Image of a perfume" class="card__img--perfume">
+      <img 
+        srcset="images/image-product-mobile.jpg 686w, images/image-product-desktop.jpg 600w"
+        sizes="(max-width: 670px) 686px, 600px"
+        src="images/image-product-desktop.jpg" alt="Image of a perfume" class="card__img--perfume">
     </div>
 
     <div class="card__perfume--details">
@@ -27,7 +30,7 @@
       </h1>
       <p class="card__details--info">
         A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+       Perfumer-Creator for the House of CHANEL.
       </p>
       <div class="card__details--price">
         <span class="card__price--new">
@@ -48,7 +51,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a target="_blank" href="https://www.ibrasan.rf.gd/"><img  class="logo" src="images/logolight2.png" alt="logo"></a>
   </div>
 </body>
 </html>

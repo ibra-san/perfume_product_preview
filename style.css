@@ -54,6 +54,8 @@ body {
     margin-bottom: 5%;
 }
 
+
+
 /*------------------Editing the content of the card starts here----------------------------*/
 
 /*----- Editing the image, and the container of the image*/
@@ -174,5 +176,166 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+a { 
+    position: relative;
+}
+.logo { 
+    width: 50px;
+    right: -42px;
+    bottom: -20px;
+    position: absolute;
+}
 
+
+/* Image responsiveness below */
+
+@media only screen and (max-width: 376px) {
+    
+    body { 
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .card { 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: auto; 
+        max-width: 90%;
+    }
+
+
+    .card__perfume--img {
+        width: 100%; 
+        max-height: 40%;
+
+    }
+    
+    .card__img--perfume {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        max-width: 600;
+        max-height: 480px;
+    }
+
+
+
+
+    .card__perfume--details { 
+        max-height: 60%;
+        width: 100%;
+        padding: 1px 1px ;
+    }
+    
+    .card__details--title { 
+        font-size: 12px;
+        width: 50%;
+        padding-left: 5%;
+        margin-top: 5% ;
+        margin-bottom: 4%;
+    }
+    
+    .card__details--name { 
+        width: 90%; 
+        padding-left: 4%; 
+        margin-bottom: 4%;
+    
+    }
+    
+    .card__details--info { 
+        margin-bottom: 12%;
+        width: 95%;
+    }
+    
+    .card__details--price { 
+        width: 55%;
+        margin-bottom: 5%;
+    }
+    
+    .card__cart--btn { 
+        width: 90%;
+        padding-top: 5% ;
+        padding-bottom: 5%;
+        margin-bottom: 6%;
+    }
+
+    
+    
+}
+
+@media only screen and (min-width: 377px) and (max-width: 670px) {
+    
+    body { 
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .card { 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 600px; 
+        width: 350px;
+    }
+
+
+    .card__perfume--img {
+        width: 100%; 
+        max-height: 40%;
+
+    }
+    
+    .card__img--perfume {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        max-width: 600;
+        max-height: 480px;
+    }
+
+
+
+
+    .card__perfume--details { 
+        max-height: 60%;
+        width: 100%;
+        padding: 1px 1px ;
+    }
+    
+    .card__details--title { 
+        font-size: 12px;
+        width: 50%;
+        padding-left: 5%;
+        margin-top: 5% ;
+        margin-bottom: 4%;
+    }
+    
+    .card__details--name { 
+        width: 90%; 
+        padding-left: 4%; 
+        margin-bottom: 4%;
+    
+    }
+    
+    .card__details--info { 
+        margin-bottom: 12%;
+        width: 95%;
+    }
+    
+    .card__details--price { 
+        width: 55%;
+        margin-bottom: 5%;
+    }
+    
+    .card__cart--btn { 
+        width: 90%;
+        padding-top: 5% ;
+        padding-bottom: 5%;
+        margin-bottom: 6%;
+    }
+
+    
+    
+}
 
