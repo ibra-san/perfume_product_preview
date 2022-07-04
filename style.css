@@ -180,9 +180,9 @@ a {
     position: relative;
 }
 .logo { 
-    width: 50px;
-    right: -42px;
-    bottom: -20px;
+    width: 16px;
+    bottom: -3px;
+    left: 5px;
     position: absolute;
 }
 
